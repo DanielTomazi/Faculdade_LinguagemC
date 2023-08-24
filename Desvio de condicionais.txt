@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 18) {
+        printf("Você é maior de idade, pagar passagem\n");
+    } else {
+        printf("Você é menor de idade, passagem garantida.\n");
+    }
+
+  //desvio de condicionais
+  int a = 3;
+  int b = 2;
+
+  if (a < b){
+  printf("a é menor que b");
+      if (a % 2 == 0){
+      printf("a é par");
+    } else{
+      printf("a é impar");
+    }
+    }
+    } else if (a == b){
+    printf("a é igual que b");
+    } else {
+    printf("a é maior que b");
+    }
+
+    return 0;
+}
