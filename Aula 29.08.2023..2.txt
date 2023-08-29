@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float salario;
+
+  printf("Informe o salário: ");
+  scanf("%f", &salario);
+
+  //Elaborando as condições
+  if(salario < 2112.01){
+    printf("Isento");
+  } else if (salario < 2826.65){
+    printf("7.5%% %.2f", salario*0.075);
+  }else if (salario < 3751.05){
+    printf("15%% %.2f", salario*0.015);
+  }else if (salario < 4664.68){
+    printf("22.5%% %.2f", salario*0.225);
+  }else {
+    printf("27.5%% %.2f", salario*0.2755);
+  }
+return 0;
+}
